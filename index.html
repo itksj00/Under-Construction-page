@@ -3,93 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Under Construction 🚧</title>
+  <title>Under Construction</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       height: 100vh;
-      background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f9fa;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: #333;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
     }
 
     .container {
       text-align: center;
-      padding: 20px;
-      max-width: 700px;
+      max-width: 600px;
+      padding: 40px 20px;
     }
 
     h1 {
-      font-size: 3.5rem;
-      margin: 0.4em 0 0.2em;
-      color: #d81e5b;
-      text-shadow: 3px 3px 0 #fff, 5px 5px 0 #000;
-      letter-spacing: -1px;
+      font-size: 2.8rem;
+      margin: 0 0 0.6em;
+      font-weight: 600;
+      color: #222;
     }
 
     .subtitle {
-      font-size: 1.6rem;
-      color: #444;
-      margin: 0.5em 0 1.5em;
-      font-weight: 500;
+      font-size: 1.4rem;
+      color: #555;
+      margin: 0 0 2em;
+      line-height: 1.4;
     }
 
-    .viking-scene {
+    .viking-img {
       max-width: 100%;
       height: auto;
-      margin: 1.5em 0 2em;
-      border-radius: 16px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
-      background: white;
-      padding: 12px;
+      border-radius: 12px;
+      margin: 1.5em 0 2.5em;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
     }
 
-    .construction-sign {
-      font-size: 5rem;
-      margin: 0.3em 0;
-      animation: bounce 2.2s infinite;
+    .emoji {
+      font-size: 3.2rem;
+      margin: 0.8em 0;
     }
 
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-20px); }
-    }
-
-    .small-text {
+    .small {
       margin-top: 3em;
-      font-size: 1.2rem;
-      color: #555;
-      opacity: 0.9;
+      font-size: 1rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <h1>Building in Progress!</h1>
-    <p class="subtitle">Hang tight~ Our cute Viking is working hard to make this place awesome! 🪓🏠</p>
+    <h1>Under Construction</h1>
+    <p class="subtitle">
+      We're building something great.<br>
+      Please check back soon!
+    </p>
 
-    <div>
-      <!-- Cute Viking building a wooden house (you can replace with your favorite image) -->
-      <img 
-        class="viking-scene"
-        src="https://img.freepik.com/free-vector/vikings-culture-settlement-family-life-traditions-kids-playing-outdoor-fighting_1284-62870.jpg"
-        alt="Cute Viking building a wooden house"
-        onerror="this.src='https://via.placeholder.com/700x500/ffe0e6/333333?text=Cute+Viking+Building+House';"
-      />
-    </div>
+    <img 
+      class="viking-img"
+      src="https://thumbs.dreamstime.com/b/vikings-scandinavian-warriors-family-house-cartoon-vector-illustration-scandinavia-history-mythology-comic-lifestyle-art-264117314.jpg"
+      alt="Cute viking family near wooden house"
+      onerror="this.src='https://via.placeholder.com/500x400/f0f0f0/cccccc?text=Under+Construction';"
+    />
 
-    <div class="construction-sign">🚧 🪓 🏗️</div>
+    <div class="emoji">🚧 🪓</div>
 
-    <p class="small-text">
-      Our little Viking is hammering away...<br>
-      It'll be even cuter and stronger soon — thanks for waiting! ♡
+    <p class="small">
+      Thanks for your patience — coming soon!
     </p>
   </div>
 
