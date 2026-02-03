@@ -16,41 +16,65 @@
       align-items: center;
       justify-content: center;
     }
+
     .container {
       text-align: center;
       max-width: 600px;
       padding: 40px 20px;
     }
+
     h1 {
       font-size: 2.8rem;
       margin: 0 0 0.6em;
       font-weight: 600;
       color: #222;
     }
+
     .subtitle {
       font-size: 1.4rem;
       color: #555;
       margin: 0 0 2em;
       line-height: 1.4;
     }
-    .viking-img {
-      max-width: 90%;          /* 너무 커지지 않게 제한 */
-      height: auto;
+
+    .image-frame {
+      width: 500px;           /* 고정 너비 */
+      height: 600px;          /* 고정 높이 - 필요하면 500px, 550px 등으로 조정 가능 */
+      margin: 1.5em auto 2.5em;
+      background: #ffffff;
       border-radius: 12px;
-      margin: 1.5em 0 2.5em;
       box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+
+    .image-frame img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;    /* 이미지가 틀 안에 전체가 보이게 맞춤 */
+      display: block;
+    }
+
     .emoji {
       font-size: 3.2rem;
       margin: 1em 0;
     }
+
     .small {
       margin-top: 3em;
       font-size: 1.1rem;
       color: #666;
+    }
+
+    /* 모바일에서는 틀 크기 줄이기 */
+    @media (max-width: 600px) {
+      .image-frame {
+        width: 90vw;
+        height: 55vw;         /* 모바일에서는 비율 유지 */
+        max-height: 500px;
+      }
     }
   </style>
 </head>
@@ -62,13 +86,14 @@
       Please check back soon!
     </p>
     
-    <img
-      class="viking-img"
-      src="poster.png"
-      alt="Under construction illustration - cute viking building"
-    />
+    <div class="image-frame">
+      <img
+        src="poster.png"
+        alt="Under construction illustration - cute viking building"
+      />
+    </div>
     
-    <div class="emoji">🚧 🛠️</div>
+    <div class="emoji">🚧 🚧 🚧 🚧 🚧</div>
     
     <p class="small">
       Thanks for your patience — coming soon!
