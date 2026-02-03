@@ -49,32 +49,23 @@
     }
 
     .caution-sign {
-      background: #ffc107; /* 밝은 노랑 */
+      background: #ffc107;          /* 순수 노란색 */
       color: #000;
       padding: 40px 20px;
       font-weight: 800;
       font-size: 1.9rem;
       line-height: 1.2;
-      border-top: 24px solid #000;
-      border-bottom: 24px solid #000;
-      background: 
-        linear-gradient(45deg, transparent 10%, #000 10%, #000 20%, transparent 20%) 0 0 / 60px 60px,
-        linear-gradient(45deg, transparent 10%, #000 10%, #000 20%, transparent 20%) 30px 30px / 60px 60px,
-        #ffc107;
-      position: relative;
+      border-top: 24px solid #000;    /* 위 검정 띠 */
+      border-bottom: 24px solid #000; /* 아래 검정 띠 */
+      text-align: center;
     }
 
-    .caution-sign::before,
-    .caution-sign::after {
-      content: "⚠️";
-      position: absolute;
-      font-size: 3.2rem;
-      top: 50%;
-      transform: translateY(-50%);
+    .small-text {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-top: 0.6em;
     }
-
-    .caution-sign::before { left: 20px; }
-    .caution-sign::after  { right: 20px; }
 
     .icons {
       font-size: 3.2rem;
@@ -92,6 +83,7 @@
       h1 { font-size: 2.1rem; }
       .subtitle { font-size: 1.1rem; }
       .caution-sign { font-size: 1.6rem; padding: 30px 15px; }
+      .small-text { font-size: 1.2rem; }
       .icons { font-size: 2.6rem; }
     }
   </style>
@@ -108,14 +100,14 @@
 
     <div class="caution-frame">
       <div class="caution-sign">
-        CAUTION!<br>
-        <span style="font-size: 1.4rem; font-weight: 600; letter-spacing: 0.05em;">
+        CAUTION!
+        <div class="small-text">
           Seongjun's Site is<br>UNDER CONSTRUCTION
-        </span>
+        </div>
       </div>
     </div>
 
-    <div class="icons">🚧 🚧 🚧 🚧 🚧 🚧</div>
+    <div class="icons">🚧 🚧 🚧</div>
 
     <p class="small">
       Thanks for your patience — coming soon!
