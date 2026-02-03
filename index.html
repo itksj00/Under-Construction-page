@@ -19,28 +19,31 @@
 
     .container {
       text-align: center;
-      max-width: 600px;
-      padding: 40px 20px;
+      max-width: 540px;
+      width: 90%;
+      padding: 20px 15px;           /* 여백 줄임 */
     }
 
     h1 {
-      font-size: 2.8rem;
-      margin: 0 0 0.6em;
+      font-size: 2.4rem;            /* 조금 작게 */
+      margin: 0 0 0.5em;
       font-weight: 600;
       color: #222;
+      line-height: 1.1;
     }
 
     .subtitle {
-      font-size: 1.4rem;
+      font-size: 1.25rem;
       color: #555;
-      margin: 0 0 2em;
+      margin: 0 0 1.2em;
       line-height: 1.4;
     }
 
     .image-frame {
-      width: 500px;           /* 고정 너비 */
-      height: 600px;          /* 고정 높이 - 필요하면 500px, 550px 등으로 조정 가능 */
-      margin: 1.5em auto 2.5em;
+      width: 100%;
+      max-width: 420px;             /* 핵심: 너무 크지 않게 */
+      height: 300px;                /* 높이 고정 → 스크롤 방지 핵심 */
+      margin: 1em auto 1.5em;
       background: #ffffff;
       border-radius: 12px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.08);
@@ -53,28 +56,26 @@
     .image-frame img {
       max-width: 100%;
       max-height: 100%;
-      object-fit: contain;    /* 이미지가 틀 안에 전체가 보이게 맞춤 */
+      object-fit: contain;
       display: block;
     }
 
     .emoji {
-      font-size: 3.2rem;
-      margin: 1em 0;
+      font-size: 2.8rem;
+      margin: 0.8em 0 1em;
     }
 
     .small {
-      margin-top: 3em;
-      font-size: 1.1rem;
-      color: #666;
+      font-size: 1rem;
+      color: #777;
+      margin: 0;
     }
 
-    /* 모바일에서는 틀 크기 줄이기 */
-    @media (max-width: 600px) {
-      .image-frame {
-        width: 90vw;
-        height: 55vw;         /* 모바일에서는 비율 유지 */
-        max-height: 500px;
-      }
+    @media (max-width: 500px) {
+      h1 { font-size: 2.1rem; }
+      .subtitle { font-size: 1.15rem; }
+      .image-frame { height: 260px; max-width: 360px; }
+      .emoji { font-size: 2.4rem; }
     }
   </style>
 </head>
@@ -93,7 +94,7 @@
       />
     </div>
     
-    <div class="emoji">🚧 🚧 🚧 🚧 🚧</div>
+    <div class="emoji">🚧 🛠️</div>
     
     <p class="small">
       Thanks for your patience — coming soon!
